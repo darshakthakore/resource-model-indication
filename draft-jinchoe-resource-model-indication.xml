@@ -142,18 +142,18 @@
     
     <abstract>
       <t>
-        Much interests in "Internet of Things (IoT)" 
-		and multiple standards following REST architectural style 
-		are under development. 
+        There has been much interest in "Internet of Things (IoT)" 
+		and multiple standards  are under development that utilize the 
+		RESTful architectural style.
 		In REST, IoT devices need to understand 
-		each other's resources, both semantic meaning and syntactic form, 
+		each other's resources, both the semantic meaning and syntactic form, 
 		to interact properly.
 		For interoperability among different standards, 
 		it is of help for CoAP endpoints to indicate 
 		the resource models they support. 
 		This document presents a scheme for IoT devices 
 		to exchange their resource model information 
-		and requests from IANA new Internet media types 
+		and requests IANA to register new Internet media types 
 		and CoAP Content-Format identifier for resource model indication.   
       </t>
     </abstract>
@@ -352,23 +352,25 @@
 		  Whereas other SDOs (e.g. oneM2M or OIC) adopt opaque datapath and  
 		  separate attribute to indicate resource type (object type in IPSO terminology)
 		  <xref target="OICSPEC"></xref>, <xref target="oneM2M-TS0001"></xref>, <xref target="RFC6690"></xref>.  
-		  Under this framework, a smart light may be represented in JSON as below: 
+		  Under this framework, a smart light in OIC may be represented in JSON as below: 
 		</t>
 
 		  <figure>          
 		  <artwork>
 
-          {
-            "rt": "oic.r.lt",
-            "on": {
-              "description": "On/Off",
-              "value": 0
-            },
-            "dim": {
-              "description": "Dimmer",
-              "value": 70
-            }
-          }
+			{
+				"rt": "oic.r.switch.binary",
+				"if": "oic.if.a oic.if.baseline",
+				"n": "myRoomLightSwitch",
+				"value": false
+			}
+			
+			{
+				"rt": "oic.r.light.dimming",
+				"if": "oic.if.a oic.if.basline",
+				"n": "myRoomLightDimmer",
+				"dimmingSetting": 70
+			}
 
 		  </artwork>
 		  </figure>
@@ -384,17 +386,17 @@
 	    <t>
 		  IoT devices, i.e. client and server, need to understand 
 		  the resource model which their corresponding device supports    
-		  to be able to interoperate each other.
+		  to be able to interoperate with each other.
 		</t>
 		
 		<t>
 		  For the initial step,  
-		  it would help for IoT devices 
-		  to indicate resource model each device supports. 
-		  Then client and server may choose a common resource model for interaction,  
+		  it will help interoperability if IoT devices 
+		  indicated the resource model they supported.
+		  Then clients and servers may choose a common resource model for interaction,  
 		  or in the absence of such a common model, 
 		  rely on translation between the models, 
-		  possibly with the assistance of 3rd party such as intermediary. 
+		  possibly with the assistance of a 3rd party. 
 		</t>
 		
 		<t>
@@ -552,11 +554,11 @@
 		</t>
 		
 		<t>
-		  Authors: CoRE WG 
+			Author(s): JinHyeock Choi
 		</t>
 		
 		<t>
-		  Change controller: IETF 
+		  Change controller: 
 		</t>
 	  </section>
 
@@ -629,11 +631,11 @@
 		</t>
 		
 		<t>
-		  Authors: CoRE WG 
+			Authors: JinHyeock Choi
 		</t>
 		
 		<t>
-		  Change controller: IETF 
+		  Change controller:
 		</t>
 	  </section>
 
@@ -710,11 +712,11 @@
 		</t>
 		
 		<t>
-		  Authors: CoRE WG 
+			Authors: JinHyeock Choi
 		</t>
 		
 		<t>
-		  Change controller: IETF 
+		  Change controller:
 		</t>
 	  </section>
 	  
