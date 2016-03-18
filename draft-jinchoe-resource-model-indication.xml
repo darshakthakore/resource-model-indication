@@ -426,16 +426,14 @@
 		</t>
 		
 		<t>
-		  Third, a well-known resource is used as an entry point 
+		  Third, a known resource is used as an entry point 
 		  for resource model exchange.  
 		  Resource discovery in CoRE is accomplished 
-		  through a well-known resource "/.well-known/core" and 
-		  OIC relies on a well-known resource "/oic/res" for initial discovery. 
-		  Similarly the servers with different resource models  
-		  may share a common well-known resource URI (e.g. "/.well-known/core"), 
-		  with which client and server can indicate each other's resource model. 
+		  through a well-known resource "/.well-known/core". 
+		  OIC relies on a knwon resource URI "/oic/res" for initial discovery. Any client that wants 
+		  to discover OIC resources uses this URI to discover other OIC resources.  
 		  A client sends a CoAP GET request 
-		  targeting the well-known resource URI with Accept Option 
+		  targeting the known resource URI with Accept Option 
 		  and servers respond with Content-Format Option. 
  		</t>
 
