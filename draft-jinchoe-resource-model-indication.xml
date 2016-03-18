@@ -154,7 +154,7 @@
 		This document presents a scheme for IoT devices 
 		to exchange their resource model information 
 		and requests IANA to register new Internet media types 
-		and CoAP Content-Format identifier for resource model indication.   
+		&amp; CoAP Content-Format identifier for resource model indication.   
       </t>
     </abstract>
     
@@ -198,7 +198,7 @@
 		  IPSO Alliance <xref target="IPSO"></xref> publishes 
 		  Smart Object Guideline <xref target="IPSOSmartObjects"></xref>
 		  and "Open Interconnect Consortium (OIC)" constructs 
-		  standards <xref target="OICSPEC"></xref> and certification for IoT devices <xref target="OIC"></xref>. 
+		  standards <xref target="OICSPEC"></xref> and certification for IoT devices <xref target="OCF"></xref>. 
 		</t>
       </section>      
 
@@ -218,7 +218,7 @@
 		  Moreover several IoT standards adopt 
 		  the common network and web transfer protocols.
 		  oneM2M, IPSO and OIC all use CoAP and IP/ UDP, 
-		  <xref target="oneM2M-TS0008"></xref>, <xref target="IPSO"></xref>, <xref target="OIC"></xref>
+		  <xref target="oneM2M-TS0008"></xref>, <xref target="IPSO"></xref>, <xref target="OCF"></xref>
 		  so any client and server supporting those standards 
 		  can exchange request and response messages. 
 	    </t>
@@ -366,10 +366,10 @@
 			}
 			
 			{
-				"rt": "oic.r.light.dimming",
+				"rt": "oic.r.light.brightness",
 				"if": "oic.if.a oic.if.basline",
-				"n": "myRoomLightDimmer",
-				"dimmingSetting": 70
+				"n": "myRoomLightBrightness",
+				"brightness": 70
 			}
 
 		  </artwork>
@@ -819,21 +819,21 @@
         </front>
       </reference>
 
-      <reference anchor="OIC" target="http://openinterconnect.org/">
+      <reference anchor="OCF" target="http://openconnectivity.org/">
         <front>
-          <title>Open Interconnect Consortium (OIC) Home Page</title>
+          <title>Open Connectivity Foundation</title>
 		  <author>
-		  	<organization>OCF</organization>
+		  	<organization>Open Connectivity Foundation</organization>
 		  </author>
 		  <date/>
         </front>
       </reference>          
 	  
-	  <reference anchor="OICSPEC" target="http://openinterconnect.org/developer-resources/specs/">
+    	<reference anchor="OICSPEC" target="http://openconnectivity.org/resources/specifications">
         <front>
           <title>OIC SPECIFICATION 1.0</title>
 		  <author>
-		  	<organization>OCF</organization>
+		  	<organization>Open Connectivity Foundation</organization>
 		  </author>
 		  <date/>
         </front>
@@ -843,7 +843,7 @@
         <front>
           <title>oneM2M Home Page</title>
 		  <author>
-		  	<organization>OCF</organization>
+		  	<organization>oneM2M</organization>
 		  </author>
 		  <date/>
         </front>
@@ -853,7 +853,7 @@
         <front>
           <title>Functional Architecture</title>
           <author>
-          	<organization>OneM2M</organization>
+          	<organization>oneM2M</organization>
           </author>
           <date year="2015" month="January"/>
         </front>
@@ -863,7 +863,7 @@
         <front>
           <title>Service Layer Core Protocol Specification</title>
           <author>
-          	<organization>OneM2M</organization>
+          	<organization>oneM2M</organization>
           </author>
           <date year="2015" month="January"/>
         </front>
