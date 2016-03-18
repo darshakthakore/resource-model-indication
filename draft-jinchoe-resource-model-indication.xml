@@ -2,7 +2,7 @@
 <!-- This template is for creating an Internet Draft using xml2rfc,
      which is available here: http://xml.resource.org. -->
 
-<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+<!DOCTYPE rfc SYSTEM "http://xml2rfc.ietf.org/public/rfc/bibxml/rfc2629.dtd" [
 <!ENTITY RFC2119 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml">
 <!ENTITY RFC2629 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2629.xml">
 <!ENTITY RFC3552 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3552.xml">
@@ -13,7 +13,6 @@
 <!ENTITY RFC7049 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7049.xml">
 <!ENTITY RFC7159 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7159.xml">
 <!ENTITY RFC7252 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7252.xml">
-<!ENTITY id.draft-ietf-core-links-json SYSTEM "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.draft-ietf-core-links-json-02.xml">
 ]>
 
 <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
@@ -43,7 +42,7 @@
 <!-- keep one blank line between list items -->
 <!-- end of list of popular I-D processing instructions -->
 
-<rfc category="std" docName="draft-jinchoe-resource-model-indication-latest" ipr="trust200902" submissionType="independent">
+<rfc category="info" docName="draft-jinchoe-resource-model-indication-latest" ipr="trust200902" submissionType="independent">
   <!-- category values: std, bcp, info, exp, and historic
      ipr values: full3667, noModification3667, noDerivatives3667
      you can add the attributes updates="NNNN" and obsoletes="NNNN" 
@@ -771,7 +770,7 @@
 	  &RFC7049;
 	  &RFC7159;
             
-	  &id.draft-ietf-core-links-json;		
+	  		
 
 	  <reference anchor="REST" target="http://www.ics.uci.edu/~fielding/pubs/dissertation/
               fielding_dissertation.pdf">
@@ -788,7 +787,9 @@
       <reference anchor="IPSO" target="http://www.ipso-alliance.org/">
         <front>
           <title>IPSO Alliance Home Page</title>
-		  <author/>
+		  <author>
+		  	<organization>IPSO</organization>
+		  </author>
 		  <date/>
         </front>
       </reference>         
@@ -809,7 +810,9 @@
 	  <reference anchor="IPSOSmartObjects" target="http://www.ipso-alliance.org/smart-object-guidelines">
         <front>
           <title>IPSO SmartObject Guideline</title>
-          <author/>
+          <author>
+          	<organization>IPSO</organization>
+          </author>
           <date year="2014" month="September"/>
         </front>
       </reference>
@@ -817,7 +820,9 @@
       <reference anchor="OIC" target="http://openinterconnect.org/">
         <front>
           <title>Open Interconnect Consortium (OIC) Home Page</title>
-		  <author/>
+		  <author>
+		  	<organization>OCF</organization>
+		  </author>
 		  <date/>
         </front>
       </reference>          
@@ -825,7 +830,9 @@
 	  <reference anchor="OICSPEC" target="http://openinterconnect.org/developer-resources/specs/">
         <front>
           <title>OIC SPECIFICATION 1.0</title>
-		  <author/>
+		  <author>
+		  	<organization>OCF</organization>
+		  </author>
 		  <date/>
         </front>
       </reference>  
@@ -833,7 +840,9 @@
 	  <reference anchor="oneM2M" target="http://www.onem2m.org/">
         <front>
           <title>oneM2M Home Page</title>
-		  <author/>
+		  <author>
+		  	<organization>OCF</organization>
+		  </author>
 		  <date/>
         </front>
       </reference>    
@@ -841,7 +850,9 @@
 	  <reference anchor="oneM2M-TS0001" target="http://www.onem2m.org/images/files/deliverables/TS-0001-Functional_Architecture-V1_6_1.pdf">
         <front>
           <title>Functional Architecture</title>
-          <author/>
+          <author>
+          	<organization>OneM2M</organization>
+          </author>
           <date year="2015" month="January"/>
         </front>
       </reference>
@@ -849,7 +860,9 @@
 	  <reference anchor="oneM2M-TS0004" target="http://www.onem2m.org/images/files/deliverables/TS-0004-Service_Layer_Core_Protocol-V1_0_1.ZIP">
         <front>
           <title>Service Layer Core Protocol Specification</title>
-          <author/>
+          <author>
+          	<organization>OneM2M</organization>
+          </author>
           <date year="2015" month="January"/>
         </front>
       </reference>
@@ -857,7 +870,9 @@
 	  <reference anchor="oneM2M-TS0008" target="http://www.onem2m.org/images/files/deliverables/TS-0008-CoAP_Protocol_Binding-V1_0_1.pdf">
         <front>
           <title>CoAP Protocol Binding</title>
-          <author/>
+          <author>
+          	<organization>OneM2M</organization>
+          </author>
           <date year="2015" month="January"/>
         </front>
       </reference>
@@ -865,7 +880,9 @@
 	  <reference anchor="IIC" target="http://www.industrialinternetconsortium.org/">
         <front>
           <title>Industrial Internet Consortium (IIC) Home Page</title>
-		  <author/>
+		  <author>
+		  	<organization>IIC</organization>
+		  </author>
 		  <date/>
         </front>
       </reference>   
@@ -873,7 +890,9 @@
  	  <reference anchor="IoE" target="http://ioeassessment.cisco.com/">
         <front>
           <title>Internet of Everything (IoE) Home Page</title>
-		  <author/>
+		  <author>
+		  	<organization>IoE</organization>
+		  </author>
 		  <date/>
         </front>
       </reference>   
